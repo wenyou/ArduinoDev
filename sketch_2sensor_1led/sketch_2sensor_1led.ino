@@ -6,6 +6,11 @@
 #define SENSOR2_PIN 3 // 第二个传感器连接到Arduino的D3
 #define RELAY_PIN  4  // 继电器控制引脚连接到Arduino的D4
 
+/**
+  The purpose of this project is to realize the function of automatically lighting up the programmable LED belt when any obstacle avoidance sensor is triggered.
+  本项目旨在实现当任意避障传感器被触发时，可编程LED灯带自动亮起的功能。
+ **/
+
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_LEDS, LED_PIN, NEO_GRB + NEO_KHZ800);
 
 unsigned long previousMillis = 0; // 上次点亮时间
